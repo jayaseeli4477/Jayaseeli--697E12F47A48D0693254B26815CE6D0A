@@ -1,10 +1,24 @@
-# python 3 program to find 
-# factorial of hiven number
-def factorial(n):
-  
-    # single line to find factorial
-  return 1 if (n==1 or n==0)else n* factorial(n - 1)
-  # Driver Code 
-num = 5
-print ( " Factorial of ",num,"is",factorial(num))
-  
+# Define the base class Player
+class Player:
+    def play(self):
+        print("The player is playing cricket.")
+
+#Define the derived class Batsman
+class Batsman(Player):
+    def play(self):
+        print("The batsman is batting.")
+
+# Define the derived class Bowler
+class Bowler(Player):
+    def play(self):
+        print("The bowler is bowling.")
+
+  # Create object of Batsman and Bowler classes
+batsman = Batsman()
+bowler = Bowler()
+
+# call the play()method for each object
+batsman.play()
+bowler.play()
+
+      
